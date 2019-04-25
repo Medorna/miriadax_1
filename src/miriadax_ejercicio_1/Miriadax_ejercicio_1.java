@@ -21,15 +21,12 @@ public class Miriadax_ejercicio_1 {
         si es menor que 17 suma 1 al contador para reiniciarlo*/
         
         for(int i=0;i<nNumeros; i++){
-            int numeroRandom = r.nextInt(65);
             
-            if(numeroRandom>17){
+            int numeroRandom = (int) (Math.random() *(65 - 18) + 18);
+            
                 System.out.println(numeroRandom);
-            }
-            else{
-                nNumeros++;
-            }
+                
         }
     }
-    
+
 }
